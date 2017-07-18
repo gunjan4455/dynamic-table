@@ -1,0 +1,18 @@
+ #parent{
+        width:500px;
+        height:500px;
+    }
+    table td{
+        padding:10px;
+        margin:10px;
+        border:1px solid #ccc;
+    }
+    .colElements {
+        padding:10px;
+        margin:10px;
+        border:1px solid #ccc;
+        float:left
+    }
+    #basicTable{
+        display: inline-block;
+    }

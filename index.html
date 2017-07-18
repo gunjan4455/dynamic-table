@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dynamic Table</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="container" id="box">
+		<div class="row">
+			<div class="col-sm-2">
+				<label>
+					Number of rows:
+				</label>
+			</div>
+			<div class="col-sm-1">
+				<input id="rowBar" type="range" min="1" max="10" step="1" value="5" onchange="myApp.createTable(this.value, this.id);" /> </div>
+			<div class="col-sm-2">
+				<input type="number" id="row" onchange="myApp.createTable(this.value, this.id)">
+			</div>
+		</div>
+
+		<br/>
+		<div class="row">
+			<div class="col-sm-2">
+				<label>
+					Number of columns:
+				</label>
+			</div>
+			<div class="col-sm-1">
+				<input id="columnBar" type="range" min="1" max="10" step="1" value="5" onchange="myApp.createTable(this.value, this.id);" />
+			</div>
+			<div class="col-sm-2">
+				<input type="number" id="col" onchange="myApp.createTable(this.value, this.id)">
+			</div>
+		</div>
+		<br/>
+		<div id="dynamicTable"></div>
+
+	</div>
+
+	<script type="text/javascript" src="js/table.js"></script>
+</body>
+
+</html>
