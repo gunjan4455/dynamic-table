@@ -16,10 +16,10 @@
 					Number of rows:
 				</label>
 			</div>
-			<div class="col-sm-1">
+			<div class="col-sm-2">
 				<input id="rowBar" type="range" min="1" max="10" step="1" value="5" onchange="myApp.createTable(this.value, this.id);" /> </div>
 			<div class="col-sm-2">
-				<input type="number" id="row" onchange="myApp.createTable(this.value, this.id)">
+				<input type="number" min="1" max="10"  id="row" onchange="myApp.createTable(this.value, this.id)" onkeydown="return false" placeholder="No of rows">
 			</div>
 		</div>
 
@@ -30,11 +30,11 @@
 					Number of columns:
 				</label>
 			</div>
-			<div class="col-sm-1">
+			<div class="col-sm-2">
 				<input id="columnBar" type="range" min="1" max="10" step="1" value="5" onchange="myApp.createTable(this.value, this.id);" />
 			</div>
 			<div class="col-sm-2">
-				<input type="number" id="col" onchange="myApp.createTable(this.value, this.id)">
+				<input type="number" min="1" max="10"  id="col" onchange="myApp.createTable(this.value, this.id)" onkeydown="return false" placeholder="No of columns">
 			</div>
 		</div>
 		<br/>

@@ -16,3 +16,6 @@
     #basicTable{
         display: inline-block;
     }
+    #row, #col{
+        width: 110px;
+    }
