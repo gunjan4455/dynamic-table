@@ -1,21 +1,9 @@
- #parent{
-        width:500px;
-        height:500px;
-    }
-    table td{
-        padding:10px;
-        margin:10px;
-        border:1px solid #ccc;
-    }
-    .colElements {
-        padding:10px;
-        margin:10px;
-        border:1px solid #ccc;
-        float:left
-    }
-    #basicTable{
-        display: inline-block;
-    }
-    #row, #col{
-        width: 110px;
-    }
+  .tableRow{
+     display: table-row;
+ }
+ .tableCol{
+     display: table-cell;
+     border: 1px solid black;
+     width:50px;
+     height:50px;
+ }
